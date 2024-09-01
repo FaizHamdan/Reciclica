@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Rumah Impian</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="secondary">
+    <ion-item color="secondary">
+      <ion-avatar slot="start">
+        <img src="https://img.freepik.com/free-vector/villa-logo-business-corporate-identity-illustration_53876-114656.jpg?t=st=1724585836~exp=1724589436~hmac=b7228f2163eb02226663dc17f766d3fa69628856bdfce83a1f81239e3db2dcab&w=740">
+      </ion-avatar>
+      <ion-label>
+        <h1>Izz</h1>
+        <p>Price: <span class="money">Rp2.000.000.000</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-pickup-call-card status="hold" updatedAt="25/08/2024 17:30:00" createdAt="22/08/2024"
+   notes="Menerima Pesanan dan Pembelian Perumahan Residensial di Seluruh Indonesia">
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button color="secondary" fill="clear" size="full" footer (click)="goToPickupCalls()">See all...</ion-button>
+  </app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="secondary" (click)="newPickupCall()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
