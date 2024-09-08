@@ -11,12 +11,12 @@ export class RegisterPageForm {
 
     private createForm() : FormGroup {
         let form = this.formBuilder.group({
-          name: ['', Validators.required],
-          email: ['', [Validators.required, Validators.email]],
-          password: ['', [Validators.required, Validators.minLength(6)]],
-          repeatPassword: ['', Validators.required],
-          phone: ['', Validators.required],
-          address: this.formBuilder.group({
+            name: ['', Validators.required],
+            email: ['', [Validators.required, Validators.email]],
+            password: ['', [Validators.required, Validators.minLength(6)]],
+            repeatPassword: ['', Validators.required],
+            phone: ['', Validators.required],
+            address: this.formBuilder.group({
             street: ['', Validators.required],
             number: ['', Validators.required],
             neighborhood: ['', Validators.required],
@@ -24,7 +24,7 @@ export class RegisterPageForm {
             zipCode: ['', Validators.required],
             state: ['', Validators.required],
             city: ['', Validators.required]
-          })
+            })
         });
 
 
